@@ -1,0 +1,45 @@
+<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+            <button type="button" (click)="signUpFunction()" class="btn btn-light">SignUp</button>
+          </li>
+      </ul>
+    </div>
+  </nav>
+  </div>
+  <br>
+<div class="container-fluid">
+  <div class="row">
+<div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3 margin">
+  <input type="text" class="form-control" placeholder="enter emailId here" [(ngModel)]="email" autofocus required> 
+</div>
+</div>
+<br>
+<div class="row">
+    <div class="col-8 col-sm-6 col-md-6 col-lg-4 col-xl-3 margin">
+      <input type="password" class="form-control" placeholder="enter password here" [(ngModel)]="password" required> 
+    </div>
+    </div>
+<div class="row">
+  <div class="col-6 col-xl-3 margin">
+    <button class="btn btn-link" (click)= "resetPassword()">Forgot Password?</button>
+  </div>
+</div>
+<br>
+
+    <div class="row">
+      <div class="col-2 col-sm-3 col-md-3 col-lg-4 col-xl-5 ">
+        </div>
+        <div class="col-3 col-sm-2 col-xl-1">
+            <button type="button" (click)="logInFunction()" class="btn btn-secondary">LogIn</button>
+        </div>
+        <div class="col-1 col-sm-2 col-xl-1">
+    <button type="button" (click)="signUpFunction()" class="btn btn-secondary">SignUp</button>
+    </div>
+    </div>
+</div>
